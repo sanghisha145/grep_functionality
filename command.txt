@@ -1,0 +1,16 @@
+$ grep -v '^a = \s*$' <file_name> 
+
+-v          -> used for printing on terminal
+'^a = \s*$' -> removes lines which contain a = empty values 
+For example   
+            a = 1
+            a = 2
+            a = 
+            a = 3
+            a = 
+            a = 4
+Result   
+            a = 1
+            a = 2
+            a = 3
+            a = 4
